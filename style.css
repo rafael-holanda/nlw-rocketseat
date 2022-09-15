@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Outfit:wght@300;400;600&display=swap');
+
+/* CSS Reset */
+* {
+	padding: 0px;
+	margin: 0px;
+	/* Mantém o tamanho das boxes, sem somar com padding ou margin*/
+	box-sizing: border-box;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
@@ -8,9 +18,45 @@ html, body {
 	background-repeat: no-repeat;
 }
 
+/* Leia-se: "Estrutura 'main' e tudo dentro dela"*/
+main * {
+	/*border: 1px solid red;*/
+	font-family: 'Inter', sans-serif;
+	line-height: 160%;
+}
 
 main {
 	max-width: 580px;
-	width: 90%;
-	margin: auto;
+	width: 90%; /* Quando a tela tiver largura menor que 580px, ficará com 90% do tamanho*/
+	margin: auto; /* Coloca margem automática para ambos os lados*/
+}
+
+ul {
+	list-style: none;
+}
+
+section {
+	color: #ffffff;
+}
+
+/* Aplica efeitos em h2 dentro de section*/
+section h2 {
+	/* Opcionais - h2 já possui os atributos a seguir
+	font-weight: 900;
+	font-size: 24px;
+	*/
+	/* or 38px */
+	letter-spacing: -0.47px;
+}
+
+section p {
+	/* Opcionais
+	font-weight: 400;
+	font-size: 16px;
+	*/
+	/* identical to box height, or 26px */
+	letter-spacing: -0.18px;
+	
+	/* zinc/400 */
+	color: #A1A1AA;
 }
